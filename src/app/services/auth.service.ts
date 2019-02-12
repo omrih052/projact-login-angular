@@ -6,6 +6,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class AuthService {
+  [x: string]: any;
 
   constructor() { }
 
@@ -23,6 +24,7 @@ export class AuthService {
     return window.localStorage.getItem(environment.tokenkey);
   }
   islogged() {
-    return this.getToken()
+    return this.router.navigate(["member"])
+
   }
 }
