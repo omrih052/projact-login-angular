@@ -1,11 +1,9 @@
 <form>
   <div>
-    <label>EMAIL:</label>
-    <input type="text" placeholder="ENTER EMAIL" #email>
-    <label>PASSWORD:</label>
-    <input type="text" placeholder="ENTER PASSWORD" #password>
-  </div>
-  <div>
-    <button (click)="login(email,password)">login</button>
+    <label>EMAIL:
+      <input type="text" placeholder="Enter Email" #email required></label>
+    <label>PASSWORD:
+      <input type="text" placeholder="Enter Password" #password required></label>
+    <button (click)='login(email,password)'>Go Member</button>
   </div>
 </form>
