@@ -7,11 +7,12 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AuthService {
+  router: any;
 
   constructor() { }
   login(email: string, password: string): Observable<string> {
     if (email === 'a@a.com' && password === 'aaa') {
-      return of('mnhvbmnvbmnbmnb').pipe(
+      return of(email, password).pipe(
         map(res => {
           this.setToken(res);
           return res;
@@ -31,6 +32,8 @@ export class AuthService {
   isLogged(): boolean {
     return this.getToken() != null;
   }
+
+
 }
 
 

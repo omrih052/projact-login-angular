@@ -7,12 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { MemberComponent } from './member/member.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    MemberComponent
+    MemberComponent,
+
+
 
   ],
   imports: [

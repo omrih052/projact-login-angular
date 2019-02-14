@@ -1,9 +1,11 @@
-<form>
+<fieldset id="formLOgin">
+  <label>EMAIL:
+    <input type="text" placeholder="Enter Email" #email required></label>
+
+  <label>PASSWORD:
+    <input type="text" placeholder="Enter Password" #password required></label>
+
   <div>
-    <label>EMAIL:
-      <input type="text" placeholder="Enter Email" #email required></label>
-    <label>PASSWORD:
-      <input type="text" placeholder="Enter Password" #password required></label>
     <button (click)='login(email,password)'>Go Member</button>
   </div>
-</form>
+</fieldset>
